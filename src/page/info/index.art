@@ -1,0 +1,4 @@
+{{extend '../../layout/layout.art'}} {{block 'title'}} Info {{/block}} {{block 'content'}}
+<div class="p">这是 Info 的内容</div>
+
+{{/block}}

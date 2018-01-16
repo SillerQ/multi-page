@@ -1,0 +1,7 @@
+{{extend '../../layout/layout.art'}} {{block 'title'}}首页{{/block}}
+{{block 'content'}}
+
+
+<p>这是 index ！</p>
+
+{{/block}}

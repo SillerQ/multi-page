@@ -1,0 +1,16 @@
+<header class="header">
+    <div class="container space-between colnum">
+        <div class="left flex">
+            <div class="flex center-box">
+                <p class="keyname"><a class="keyname" href="../views/index.html">LOGO</a></p>
+            </div>
+        </div>
+        <div class="right center-box">
+            <a href="#features">Features</a>
+            <a href="#install">Install</a>
+            <a href="../views/info.html">Info</a>
+            <a href="#team">About</a>
+            <button class="btn header-btn">Download</button>
+        </div>
+    </div>
+</header>

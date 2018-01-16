@@ -1,0 +1,298 @@
+body {
+  background-color: #1551E2;
+  font-family: "PingFang SC";
+  margin: 0;
+  padding: 0;
+}
+
+header,section{
+  width: 100%;
+  height: auto;
+}
+section{
+  padding-top: 56px;
+  padding-bottom: 48px;
+}
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+p{
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+a,button{
+  cursor: pointer;
+  text-decoration: none;
+}
+.container{
+  width: 1100px;
+  height: 100%;
+  margin: auto;
+}
+.title {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 56px;
+}
+
+h3 {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 45px;
+}
+.btn{
+  display: block;
+  border: none;
+  padding: 11px 24px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.seconed-tit {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+.content-text {
+  //opacity: 0.7;
+  color: rgba(0, 0, 0, .7);
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.flex {
+  display: flex;
+}
+
+.center-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.space-between{
+  display: flex;
+  justify-content: space-between;
+}
+.sf{
+  font-size: 16px;
+}
+
+
+
+.header {
+  height: 72px;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  //box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  .left {
+    img.logo {
+      display: block;
+      width: auto;
+      height: 36px;
+    }
+
+    .keyname {
+      color: #4a4e5b;
+      font-size: 24px;
+      // margin-left: 20px;
+    }
+    .teamname {
+
+      margin-left: 17px;
+      color: #484E5D;
+      font-size: 20px;
+      font-weight: 300;
+      span {
+        padding: 0 15px;
+        border-left: 1px solid rgba(0, 0, 0, .2);
+      }
+    }
+  }
+  .right {
+    a {
+      color: #a1a4aa;
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 25px;
+      margin-right: 2.22em;
+      font-weight: 300;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .header-btn {
+      border: 1px solid #484E5D;
+      background-color: #fff;
+      margin-left: 30px;
+      //min-width: 114px;
+    }
+  }
+}
+
+
+
+
+
+// pc超大屏 1380px
+@media (max-width: 1380px) {
+  .container {
+    //width: 1100px;
+  }
+}
+
+// 等于或小于 75*16 = 1200px（ pc宽屏）
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+// 等于或小于  62*16 = 992px（pc窄屏）
+@media (max-width: 992px) {
+  .container {
+    width: 80%;
+  }
+
+  .btn {
+
+  }
+
+  .flex-colnum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    .right {
+      a {
+        font-size: 15px;
+        margin-right: 1em;
+      }
+      .header-btn {
+        font-size: 15px;
+        padding: 8px 12px;
+        margin-left: .6em;
+      }
+    }
+  }
+
+}
+
+// 等于或小于 48*16 = 768px(平板竖屏)
+@media (max-width: 768px) {
+
+  .header {
+    height: 62px;
+    .left {
+      img.logo {
+        height: 20px;
+      }
+      .keyname {
+        font-size: 20px;
+        // margin-left: 10px;
+      }
+      .teamname {
+        font-size: 16px;
+      }
+    }
+    .right {
+      a {
+        font-size: 14px;
+      }
+      .header-btn {
+        font-size: 14px;
+      }
+    }
+  }
+
+}
+
+// 等于或小于 34*16 = 667px（手机横屏）
+@media (max-width: 667px) {
+
+  .header {
+    .colnum {
+      width: 96%;
+    }
+  }
+
+}
+
+// 等于或小于 34*16 = 544px（手机竖屏）
+@media (max-width: 544px) {
+  .header {
+    padding-top: 30px;
+    height: auto;
+    border-bottom: none;
+    .colnum {
+      justify-content: flex-start;
+      flex-direction: column;
+      .left {
+        flex-direction: column;
+        .center-box {
+          padding-bottom: 10px;
+        }
+        .keyname {
+          font-size: 30px;
+        }
+        img.logo {
+          height: 32px;
+        }
+        .teamname {
+          margin-left: 0;
+          font-size: 14px;
+          span {
+            border-left: 0;
+          }
+        }
+      }
+      .right {
+        margin-top: 8px;
+        .header-btn {
+          display: none
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
